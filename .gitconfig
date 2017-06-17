@@ -1,0 +1,45 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
+[color "status"]
+  added = green
+  changed = blue
+  untracked = red
+[color "diff"]
+  meta = yellow
+  old = red
+  new = green
+[log]
+  # Better date formats in logs
+  date = rfc
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  # James Brown version control
+  up = push
+  down = pull
+  # Show number of commits from all authors.
+  stats = shortlog -sn
+  # Show detailed logs
+  graph = log --graph --decorate --stat --date=iso --all
+  # Show simplified logs
+  recap = log --oneline
+  # Empty line between results from different files.
+  find = "!git grep --break -C1"
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+[push]
+  default = current
+[github]
+  user = lottejackson
+[user]
+	name = lottejackson
+	email = lottejackson@gmail.com
